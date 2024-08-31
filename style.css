@@ -1,5 +1,43 @@
-body {
-    background-image: url(Design\ 5.png);
-    background-repeat: repeat;
-    background-size: cover;
+html {
+  scroll-behavior: smooth;
+}
+html,
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  padding: 40px 48px;
+  gap: 48px;
+  z-index: 1;
+  width: 100%;
+}
+header a {
+  color: #fff;
+}
+nav {
+  display: flex;
+  gap: 45px;
+  text-transform: uppercase;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.space {
+  background-image: url(Design\ 6.png);
+  background-repeat: repeat;
+  background-size: cover;
+  color: white;
+  font-size: larger;
 }

@@ -4,23 +4,21 @@ html {
 html,
 body,
 h1,
-h2,
-p {
+h2 {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 header {
-  background-color: black;
+  position: fixed;
   color: white;
   display: flex;
   padding: 40px 48px;
   gap: 48px;
   z-index: 1;
-  width: 100%;
 }
 header a {
-  color: #fff;
+  color: pink;
 }
 nav {
   display: flex;
@@ -31,13 +29,45 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 720;
 }
-
+nav a:hover {
+  text-decoration: underline;
+}
+.feature {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 .space {
   background-image: url(Design\ 6.png);
-  background-repeat: repeat;
-  background-size: cover;
-  color: white;
-  font-size: larger;
+}
+.style {
+  position: absolute;
+  bottom: 200px;
+  left: 48px;
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.style-tagline {
+  text-transform: uppercase;
+  font-weight: 100;
+  opacity: 1;
+  font-size: 20px;
+}
+.style-blurb {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.terminal-img {
+  background-image: url(terminal.jpeg);
+}
+.rocket-img {
+  background-image: url(rocket.jpeg);
+}
+.spaceport-img {
+  background-image: url(Spaceport.jpeg);
 }

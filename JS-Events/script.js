@@ -16,6 +16,7 @@ console.log(myButton);
 
 function handleClick() {
     console.log("you have clicked my button ;-)");
+    myButton.textContent = "ooo yeah again!";
 }
 //second we need to set up our event listener
 //addEventListener has two arguments
@@ -40,7 +41,7 @@ myCountingButton.addEventListener("click", handleCounting);
 const colorButton = document.getElementById("color-changer");
 
 function random(number) {
-  return Math.floor(Math.random() * (number + 1));
+    return Math.floor(Math.random() * (number + 1));
 }
 
 colorButton.addEventListener("click", () => {

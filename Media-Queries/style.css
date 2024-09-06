@@ -1,0 +1,70 @@
+
+* {
+    scroll-behavior: smooth;
+    background-color: gray;
+    text-align: center;
+    font-size: large;
+    text-shadow: 3px 3px 0 black;
+    color: lightblue;
+  }
+
+ 
+  .notes {
+    display: flex;
+    font-family: Impact;
+    font-size: 80px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 60px 0px 60px 0px;
+    border: solid beige 12px;
+  }
+  .examples-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.classAims {
+    display: flex;
+    flex-direction: row 2;
+    align-items: center;
+    border-radius: 60px 0px 60px 0px;
+    border: solid beige 12px;
+
+}
+.subHeading {
+    text-align: center;
+    align-items: center;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: solid beige 5px;
+    text-align: center;
+    border-radius: 60px 0px 60px 0px
+  }
+h2 {
+    text-align: center;
+}
+  @media (min-width: 600px) {
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .examples-container{ 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+     background: plum;
+      }
+}

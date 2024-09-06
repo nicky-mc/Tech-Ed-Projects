@@ -117,3 +117,18 @@ nav a:hover {
   background: #ff5700;
   color: white;
 }
+@media (min-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 800px) {
+  .examples-container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+}

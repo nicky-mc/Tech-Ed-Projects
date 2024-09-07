@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  background-color: gray;
+  text-align: center;
+  font-size: large;
+  text-shadow: 3px 3px 0 black;
+  color: whitesmoke;
+}
+body {
+  font-size: 50px;
+}

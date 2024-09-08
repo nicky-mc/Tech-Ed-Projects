@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio/Media interactions with JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1><strong>Media interactions with js</strong></h1>
+    </header>
+    <main>
+    <div class="notes">
+      <div class="subTitle">
+        <strong>Aims</strong><br />
+        <strong>CSS-GRID and JS media interactions</strong>
+      </div>
+        <p class="aims"></p>
+        - add media elements to our website: image, video and audio <br />
+        on html <br />
+        - Connect our audio or video to controls with js <br />
+        for customisation <br />
+        - Style our website with CSS-GRID - style system <br />
+      </p><br>
+      <h3><strong>this wil get so fun we just can't stop!</strong></h3>
+    </div>
+      <br />
+      <div class="media">
+      <img
+        src="assets/antique-car-8940770_640.jpg"
+        alt="a picture of a classic Volkswagen Beetle"
+        width="300"
+        height="200"
+        id="vw-picture"
+      /> <br>
+      <div class="music">
+      <audio src="assets/ES_Free Mind - Wildflowers.mp3" id="audio-player"></audio
+      ><br>
+       <div class="audio-controls"></div>
+       <button id="play">Play</button>
+       <button id="pause">Pause</button>
+       <button id="stop">Stop</button>
+       <button id="skip">Skip 5 sec</button><br>
+       <input id="volume" type="range" min="0" max="1" step="0.01" /><br>
+      </div>
+    </div>  
+    <br>
+      <video
+        src="assets/217115_tiny.mp4"
+        controls
+        width="600"
+        height="400"
+        id="video-player"
+      ></video>
+           <br>
+    </div>
+    </main>
+    <footer>
+      <p>Created by Nicky Mortoza-Cowles 2024</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

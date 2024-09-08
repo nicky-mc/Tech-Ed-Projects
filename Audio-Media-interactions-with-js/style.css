@@ -1,0 +1,72 @@
+html {
+  scroll-behavior: smooth;
+  text-align: center;
+  font-size: large;
+  text-shadow: 3px 3px 0 black;
+  color: whitesmoke;
+  font-size: 35px;
+  font-family: Haettenschweiler;
+}
+body {
+  background-color: rgb(53, 53, 53);
+}
+/* the * selector  selects everthing in the page */
+body {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr; /* fr = fraction */
+  grid-template-rows: 3fr 1fr 1fr;
+  place-content: center;
+}
+header {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: -1;
+  grid-row-end: -1;
+  border: solid 10px salmon;
+  border-radius: 25px 0 35px 0;
+  margin: 15px;
+  padding: 10px;
+  color: teal;
+}
+footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  border: solid 10px salmon;
+  border-radius: 25px 0 35px 0;
+  margin: 15px;
+  padding: 10px;
+  color: teal;
+}
+#vw-picture {
+  border-radius: 25px 0 35px 0;
+  border: solid salmon 10px;
+}
+#video-player {
+  border-radius: 25px 0 35px 0;
+  border: solid salmon 10px;
+}
+main {
+  display: flex;
+  place-items: center;
+  place-content: center;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: block;
+}
+.notes {
+  display: flex;
+  align-content: center;
+  grid-column: span 3;
+  grid-row: span 3;
+  align-items: center;
+  align-content: center;
+  display: block;
+}
+.media {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  display: block;
+  border-radius: 25px 0 35px 0;
+  border: solid salmon 10px;
+}

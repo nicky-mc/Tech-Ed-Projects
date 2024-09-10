@@ -1,0 +1,28 @@
+* {
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+  color: salmon;
+  font-size: larger;
+  text-shadow: 3px 3px 0 black;
+}
+
+header {
+  text-decoration: underline 5px salmon;
+  border: solid 10px teal;
+  border-radius: 0 100px 0 120px;
+  margin: 100px;
+  padding: 10px;
+}
+#fox-container {
+  border: solid 20px teal;
+  border-radius: 0 100px 0 120px;
+  margin: 100px;
+  padding: 20px;
+}
+h2 {
+  text-decoration: underline 5px salmon;
+  border: solid 10px teal;
+  border-radius: 0 100px 0 120px;
+  margin: 100px;
+  padding: 10px;
+}

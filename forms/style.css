@@ -1,0 +1,28 @@
+* {
+  background-color: rgb(46, 46, 46);
+  text-align: center;
+  color: salmon;
+  font-size: large;
+  text-shadow: 3px 3px 0 black;
+}
+header {
+  font-size: 100px;
+  text-decoration: underline 5px salmon;
+}
+label {
+  cursor: default;
+}
+input::placeholder {
+  color: beige;
+  font-family: Imapact;
+  text-shadow: 3px 3px 0 black;
+}
+#comment {
+  color: salmon;
+  text-shadow: 3px 3px black;
+}
+::placeholder {
+  color: beige;
+  font-family: Imapact;
+  text-shadow: 3px 3px 0 black;
+}

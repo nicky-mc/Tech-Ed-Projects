@@ -1,11 +1,18 @@
-//we want to test a function
+//we want to test a function --> the logic works!
 
 function countToTen() {
-  for (let i = 1; 1 <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     console.log(i);
-    debugger;
+    //debugger; //this will stop the code from running and we will use the dev toold to check
   }
 }
 countToTen();
 
-//this will stop tyhe code from running and we will use the dev tools to check
+//I want to test a function that adds numbers
+function add(a, b) {
+  const sum = a + b;
+  console.log(sum);
+  //debugger;
+}
+
+// add(5, 9);

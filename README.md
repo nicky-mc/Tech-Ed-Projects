@@ -1,14 +1,8 @@
-# REpository for my main workshops during my boot camp 
+# Reository for my main workshops during my boot camp
 
+Git branch demo
 
-
-
-
-
-
-# Git branch demo
-
-# Key Concepts
+Key Concepts
 
 -branch
 -git flow

@@ -1,4 +1,6 @@
-# Reository for my main workshops during my boot camp
+# Repository for my main workshops during my boot camp
+
+#With Tech Educators
 
 Git branch demo
 

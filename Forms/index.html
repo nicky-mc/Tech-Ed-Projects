@@ -18,15 +18,41 @@
         <label for="username">What's ya name Cobba?</label>
         <!-- !the name attribute is the most important attribute is the most important attribute in your input. WE ALWAYS NEED THE NAME attribute
         THE NAME attribute value always has to match the for attribute value in the label-->
-        <input type="text" name="username" id="username-input" /><br />
+        <input
+          type="text"
+          name="username"
+          id="username-input"
+          required
+          placeholder="ya name goes here ya glah"
+        /><br />
         <label for="password">What's ya codeword genius?</label>
-        <input type="password" name="password" id="password" /><br />
+        <input
+          type="password"
+          name="password"
+          id="password-input"
+          class="password-input"
+          required
+          placeholder="Oi wombat don't share this!"
+          minlength="6"
+          maxlength="15"
+        /><br />
         <label for="birthdate">When's ya birthday ya wombat?</label>
         <input type="date" name="birthdate" id="birthdate" /><br />
         <button type="submit">Submit</button>
       </form>
     </main>
-    <footer></footer>
+    <footer>
+      <form>
+        <label for="comment">Comments</label>
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Put ya  jibber jabber here!"
+        ></textarea
+        ><br />
+        <button>Submit</button>
+      </form>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>

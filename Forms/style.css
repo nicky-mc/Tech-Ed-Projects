@@ -7,11 +7,22 @@
 }
 header {
   font-size: 100px;
-  text-decoration: underline 5px bisque;
+  text-decoration: underline 5px salmon;
 }
 label {
   cursor: default;
 }
-form {
-  background-color: beige;
+input::placeholder {
+  color: beige;
+  font-family: Imapact;
+  text-shadow: 3px 3px 0 black;
+}
+#comment {
+  color: salmon;
+  text-shadow: 3px 3px black;
+}
+::placeholder {
+  color: beige;
+  font-family: Imapact;
+  text-shadow: 3px 3px 0 black;
 }

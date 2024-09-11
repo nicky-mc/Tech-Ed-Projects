@@ -1,0 +1,80 @@
+* {
+  text-align: center;
+  background-color: #454747;
+  color: salmon;
+  text-shadow: 3px 3px 0 black;
+}
+.lesson {
+  display: flex;
+  text-align: center;
+  display: block;
+}
+.lesson-subHeading .lesson-aims .expandedAims .expandedAims-list {
+  display: block;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #454747;
+  color: salmon;
+  text-shadow: 3px 3px 0 black;
+}
+
+.geek {
+  color: salmon;
+  text-align: center;
+}
+
+.digit {
+  font-size: 150px;
+  color: #fff;
+}
+
+.txt {
+  font-size: 30px;
+  color: #fffcd6;
+}
+
+#buttons {
+  margin-top: 50px;
+}
+
+.btn {
+  width: 100px;
+  padding: 10px 15px;
+  margin: 0px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  color: white;
+  font-weight: 500;
+}
+
+#start {
+  background-color: #009779;
+}
+
+#stop {
+  background-color: #0e85fc;
+}
+
+#reset {
+  background-color: #c91400;
+}
+a:hover {
+  color: chocolate;
+}
+h1 {
+  text-decoration: underline rgb(222, 104, 90);
+}
+a:hover {
+  transform: translateY(-10px);
+}

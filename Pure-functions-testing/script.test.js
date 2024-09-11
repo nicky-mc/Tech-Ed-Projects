@@ -2,7 +2,7 @@
 //if I have exporteed an element I can import it into the file  Ialso want to use it in.
 import { test, expect } from "vitest";
 // remeber to import parameters and the test from vitest
-import { add, subtract, isPalindrome } from "./script";
+import { add, subtract } from "./script";
 //destructuring  --> means importing one element from a whole file
 // we write a test  for our add function in Script.js
 test("add", function () {
@@ -15,9 +15,3 @@ test("subtract", function () {
   const expected = 6;
   expect(result).toBe(expected);
 });
-test("isPalindrome", function () {
-    const result = isPalindrome("a man a plan, a canal: panama", "racecar");
-    const expected = "a man a plan, a canal: panama", "racecar";
-    expect(result).toBe(expected);
-});
-    

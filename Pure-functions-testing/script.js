@@ -8,9 +8,12 @@ export function subtract(a, b) {
   return a - b;
 }
 subtract(12, 6);
-export function isPalindrome(a, b) {
-  let a = "a man a plan, a canal: panama";
-  let b = "racecar";
-  return a, b;
+//export function isPalindrome(palindrome) {
+//if palindrome(
+//eturn a, b;
+//}
+//isPalindrome(a, b);
+export function checkPalindrome(str) {
+  return str == str.split("").reverse().join("");
 }
-isPalindrome(a, b);
+checkPalindrome("racecar");

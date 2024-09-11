@@ -101,7 +101,7 @@ btnStrt.addEventListener('click',()=>{
   btnStp.classList.remove('stop-active');
 
   startTimer=setInterval(()=>{
-    ms++;//ms=ms+1;
+    ms++;
     if(ms==100){
       sec++;
       ms=0;
@@ -135,12 +135,12 @@ btnRst.addEventListener('click',()=>{
 
 
 function updateDisplay(){
-  //Formated Display
+  
   phrs=hrs<10?'0'+hrs:hrs;
   pmin=min<10?'0'+min:min;
   psec=sec<10?'0'+sec:sec;
   pms=ms<10?'0'+ms:ms;
-  //Output
+  
   document.querySelector('.hrs').innerText=phrs;
   document.querySelector('.min').innerText=pmin;
   document.querySelector('.sec').innerText=psec;

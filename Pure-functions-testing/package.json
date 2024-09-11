@@ -1,0 +1,16 @@
+{
+  "name": "pure-functions-testing",
+  "version": "1.0.0",
+  "main": "purefunctionexample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "vitest": "^2.0.5"
+  }
+}

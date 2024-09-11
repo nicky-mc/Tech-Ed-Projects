@@ -89,3 +89,60 @@ function stopWatch() {
     setTimeout(stopWatch, 10);
   }
 }
+const btnStrt=document.querySelector('.strt');
+const btnStp=document.querySelector('.stp');
+const btnRst=document.querySelector('.rst');
+
+let hrs=min=sec=ms=0,startTimer;
+
+btnStrt.addEventListener('click',()=>{
+
+  btnStrt.classList.add('start-active');
+  btnStp.classList.remove('stop-active');
+
+  startTimer=setInterval(()=>{
+    ms++;//ms=ms+1;
+    if(ms==100){
+      sec++;
+      ms=0;
+    }
+    if(sec==60){
+      min++;
+      sec=0;
+    }
+    if(min==60){
+      hrs++;
+      min=0;
+    }
+    updateDisplay();
+  },10);
+});
+
+btnStp.addEventListener('click',()=>{
+  clearInterval(startTimer);
+  btnStrt.classList.remove('start-active');
+  btnStp.classList.add('stop-active');
+
+});
+
+btnRst.addEventListener('click',()=>{
+  hrs=min=sec=ms=0;
+  clearInterval(startTimer);
+  updateDisplay();
+  btnStrt.classList.remove('start-active');
+  btnStp.classList.remove('stop-active');
+});
+
+
+function updateDisplay(){
+  //Formated Display
+  phrs=hrs<10?'0'+hrs:hrs;
+  pmin=min<10?'0'+min:min;
+  psec=sec<10?'0'+sec:sec;
+  pms=ms<10?'0'+ms:ms;
+  //Output
+  document.querySelector('.hrs').innerText=phrs;
+  document.querySelector('.min').innerText=pmin;
+  document.querySelector('.sec').innerText=psec;
+  document.querySelector('.ms').innerText=pms;
+}

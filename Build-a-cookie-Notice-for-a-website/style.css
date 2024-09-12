@@ -1,0 +1,29 @@
+#cookieNotice {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  background-image: url(ab6761610000e5eba3a7cba23d68a4e73c3b8155.jpeg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-decline {
+  background-color: #f00;
+}
+
+.button-accept {
+  background-color: #0f0;
+}
+#cookieNotice p {
+  margin: 0;
+}

@@ -33,11 +33,15 @@ button.addEventListener("click", function () {
   let count = 0;
   count += 1;
 });
+// button.addEventListener("click", () => {
+// let count = 0;
+// count += 1;
+//});
 
 //===================
 
 //regular function (forEach)
-games.forEach(function (game) {
+games.forEach((element) => {
   const h2 = document.createElement("h2");
   const p = document.createElement("p");
   const img = document.createElement("img");
@@ -50,7 +54,11 @@ async function getPosts() {
   const data = await response.json();
   return data;
 }
-
+const getPosts = async () => {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const data = await response.json();
+  return data;
+};
 //===================
 
 //Feel free to add new arrow functions here

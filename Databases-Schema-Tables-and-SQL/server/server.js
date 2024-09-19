@@ -1,50 +1,70 @@
-//access to expres and cors and dotenv
-import express, { query } from "express";
+// Access to express, cors, and dotenv
+import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-//config dotenv for this server
+
+// Configure dotenv for this server
 dotenv.config();
-//we need to set up our database connection to accept requests from the server
-// now access pg
+
+// We need to set up our database connection to accept requests from the server
+// Now access pg
 import pg from "pg";
 
-//now set up a database pool using our connection string
-// get connection string from .env file
+// Now set up a database pool using our connection string
+// Get connection string from .env file
 const dbConnectionString = process.env.DATABASE_URL;
-//set up our database request pool
-// a pool is when the server tries to request data from the database the pool is like a waiting area so that it can handle the server requests cominig in. it'll collect all requests and the waiting times will be shorter  than without it
+
+// Set up our database request pool
+// A pool is when the server tries to request data from the database. The pool is like a waiting area so that it can handle the server requests coming in. It'll collect all requests and the waiting times will be shorter than without it.
 export const db = new pg.Pool({
   connectionString: dbConnectionString,
 });
-//intialise our express server
+
+// Initialize our express server
 const app = express();
-//tell express to use json and cors
+
+// Tell express to use json and cors
 app.use(express.json());
 app.use(cors());
-// set up local port (8080)
 
+// Set up local port (8080)
 const port = 8080;
 app.listen(port, () => {
-  console.log(`Server is running in port${port}`);
+  console.log(`Server is running on port ${port}`);
 });
-// route route
-app.get("/.", (request, response) => {
+
+// Root route
+app.get("/", (request, response) => {
   response.json(
-    "Our server is running in localhost 8080, and we built it on Rock N Roll"
+    "Our server is running on localhost 8080, and we built it on Rock N Roll"
   );
 });
-// connection string needs added to .gitignore
-// will need an end point to READ the data in my pets table
-// we can use SQL to query our database and get the data
-//app.get("/pets", async (req, res)=> {
-//    const query = await db.query(`SELECT * FROM pets`);
-// we can wrangle the data from this point
-//res.json(query);
-//});
-// app.get("/pets-dog", async(req, res)=> {
-//!whenever you need tospecify data in your query do not write the data directly USE a Paramneter to replace the data with a parameter
-// onst query = await db.query(`SELECT * FROM pets WHERE id = $1`, ["dog"]);
-//resizeBy.json(query.rows);
-//});
-// req.body.name example as when we hacve a parameter such as $1 etc we need to specify the value in square brackets after the query is finished
-//that value is usally provided by the user --> in the body data of the form(req.body.data)
+
+// Connection string needs to be added to .gitignore
+
+// Endpoint to READ the data in the pets table
+app.get("/pets", async (req, res) => {
+  try {
+    const query = await db.query(`SELECT * FROM pets`);
+    res.json(query.rows);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Endpoint to READ data for a specific animal type in the pets table
+app.get("/pets/:animal", async (req, res) => {
+  const animal = req.params.animal;
+  try {
+    const query = await db.query(`SELECT * FROM pets WHERE animal = $1`, [
+      animal,
+    ]);
+    res.json(query.rows);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Example of using req.body.name when we have a parameter such as $1 etc.
+// We need to specify the value in square brackets after the query is finished.
+// That value is usually provided by the user --> in the body data of the form (req.body.data)
